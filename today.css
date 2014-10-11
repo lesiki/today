@@ -1,0 +1,127 @@
+* { box-sizing: border-box;}
+body {
+	margin:0;
+	font-family: 'Quicksand', sans-serif;
+	font-size:30pt;
+}
+nav {
+	text-align:center;
+	font-size:70pt;
+	vertical-align:middle;
+}
+nav div#icon_holder {
+	display:inline;
+	padding:0;
+	margin:0;
+}
+nav i.fa-chevron-right {
+	font-size:20pt;
+	padding-bottom:10px;
+	padding-top:-10px;
+	vertical-align:middle;
+}
+nav .intro {
+	color:#6c391e;
+}
+nav .gym {
+	color:#fff;
+}
+nav .gym .fa-bicycle {
+	color:#fef9a7;
+}
+nav .read {
+	color:#3b1e16;
+}
+nav .read .fa-book {
+	color:#5e1d17;
+}
+nav .code {
+	color:#cacaca;
+}
+nav .code .fa-github {
+	color:#fff;
+}
+nav .music {
+	color:#262415;
+}
+nav .music .fa-music {
+	color:#b8b485;
+}
+nav .drink {
+	color:#a43b3b;
+}
+nav .drink .fa-beer{
+	color:#c93f3f;
+}
+section {
+	height:100%;
+}
+section.intro {
+	background:url('images/intro.jpeg');
+	background-size:cover;
+	color:#ffffc9;
+}
+section.gym {
+	background:url('images/gym.jpg');
+	background-size:cover;
+	color:#fff;
+}
+section.read {
+	background:url('images/read.jpg');
+	background-size:cover;
+	color:#234;
+}
+section.code {
+	background:url('images/code.jpg');
+	background-size:cover;
+	color:#fff;
+}
+section.music {
+	background:url('images/music.jpeg');
+	background-size:cover;
+	color:#fff;
+}
+section.drink {
+	background:url('images/clock.jpeg');
+	background-size:cover;
+	color:#a43b3b;
+}
+section.outro {
+	height:20%;
+	color:#eee;
+	background-color:#222;
+	font-size:11pt;
+}
+.outro a {
+	text-decoration:none;
+	color:#fff;
+}
+.shoutout {
+	color:#ccc;
+	font-size:8pt;
+}
+h1 {
+	position:relative;
+	top:50%;
+	text-align:center;
+	width:100%;
+	display:block;
+}
+p {
+	margin:0;
+	position:relative;
+	top:50%;
+	text-align:center;
+	width:100%;
+	display:block;
+}
+div.loading {
+	position: fixed;
+	width:100%;
+	height:100%;
+	background-color:#222;
+	z-index:10;
+	color:#fff;
+	text-align:center;
+	padding-top:20%;
+}

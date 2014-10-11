@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Today, I..</title>
+		<script src="http://cdn.jsdelivr.net/g/jquery@1.11,jquery.midnight@1.0.3"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="today.css" />
+		<script type="text/javascript">
+			$(function() {
+				$('body').waitForImages(function() {
+					$('div.loading').fadeOut();
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="loading"><i class="fa fa-spin fa-spinner"></i></div>
+		<nav class="fixed">
+			<div id="icon_holder">
+				<i class="fa fa-bicycle"></i>
+				<i class="fa fa-chevron-right"></i>
+				<i class="fa fa-book"></i>
+				<i class="fa fa-chevron-right"></i>
+				<i class="fa fa-github"></i>
+				<i class="fa fa-chevron-right"></i>
+				<i class="fa fa-music"></i>
+				<i class="fa fa-chevron-right"></i>
+				<i class="fa fa-beer"></i>
+			</div>
+		</nav>
+		<section class="intro" data-midnight="intro">
+			<h1>Today, I...<br/>
+				<i class="fa fa-angle-double-down"></i>
+			</h1>
+		</section>
+		<section class="gym" data-midnight="gym">
+			<p>Got some exercise done</p>
+		</section>
+		<section class="read" data-midnight="read">
+			<p>Read a bit</p>
+		</section>
+		<section class="code" data-midnight="code">
+			<p>Made this page</p>
+		</section>
+		<section class="music" data-midnight="music">
+			<p>Listened to some good music</p>
+		</section>
+		<section class="drink" data-midnight="drink">
+			<p>Had a night out with friends</p>
+		</section>
+		<section class="outro">
+			<p>a small experiment by <a href="lesiki.github.com">sitati</a></p>
+			<p class="shoutout">images from <a href="unsplash">http://unsplash.com</a></p>
+			<p class="shoutout">uses <a href="midnight.js">https://github.com/Aerolab/midnight.js</a></p>
+		</section>
+		<script>
+			$(document).ready(function(){
+				$('nav.fixed').midnight();
+			});
+		</script>
+	</body>
+</html>
